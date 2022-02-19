@@ -28,10 +28,10 @@ class Blockchain:
 
 
 my_blockchain = Blockchain()
-my_blockchain.addBlock("I'm the 2nd block")
-my_blockchain.addBlock("And this is the 3rd!")
-my_blockchain.addBlock("While this is the 4th")
-my_blockchain.addBlock("Finally this is the 5th!!")
+
+no_of_blocks = int(input("How many blocks do you want to add in the blockchain?  "))
+for each in range(no_of_blocks):
+  my_blockchain.addBlock("Added new Block!")
 
 for each_block in my_blockchain.chain:
     print("\nBlock data: ", my_blockchain.__dict__)
